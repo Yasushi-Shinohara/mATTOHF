@@ -1,0 +1,56 @@
+Band_option
+  .false.
+  .true.
+
+functional
+  'HF'
+
+acell
+  3.6d0
+
+NB
+  8
+
+NBocc
+  1
+
+NG
+  16
+  128
+
+NK
+  40
+  100
+  8
+  200
+
+Nscf
+  100
+  1
+  25
+
+NCG
+  2
+
+dt
+  0.02
+
+NT
+  100000
+  400000
+
+field_option
+  'LR'
+
+dAc
+  0.0001
+
+
+atoms
+  1             : Nspecies
+  1             : Zatom(1:Nspecies)
+  1.0d0         : alphaatom(1:Nspecies)
+  2             : Nion
+  0.277778d0  1 : Rion(ii=1), Kion(ii=1)
+  0.722222d0  1 : Rion(ii=2), Kion(ii=2)
+
