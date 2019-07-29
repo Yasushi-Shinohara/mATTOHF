@@ -221,7 +221,7 @@ Subroutine Initialization
     write(*,*) 'Nion =', Nion
     Write(*,'("ii ,    Rion(ii),     Kion(ii)")') 
     Do ii = 1,Nion
-      Write(*,'(i5,2x,3f12.8,2x,i5)') ii, Rion(ii), Kion(ii)
+      Write(*,'(i5,2x,f12.8,2x,i5)') ii, Rion(ii), Kion(ii)
     End Do
     Write(*,'("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++")') 
   End If
