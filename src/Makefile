@@ -1,9 +1,9 @@
 include ./make.inc
 
-PROG = 1D-TDHF
+PROG = mATTOHF
 OBJS = Constants.o Global_variables.o Functions.o \
 	Initialization.o Prep_periodic_ion_potential.o \
-	GS_calculation.o RT_calculation.o 1D-TDHF.o
+	GS_calculation.o RT_calculation.o mATTOHF.o
 
 $(PROG): $(OBJS)
 	$(FC) -o $(PROG) $(OBJS) $(LN)
@@ -22,10 +22,10 @@ GS_calculation.o:GS_calculation.f90
 	$(FC) -c GS_calculation.f90 $(LN)
 RT_calculation.o:RT_calculation.f90
 	$(FC) -c RT_calculation.f90 $(LN)
-1D-TDHF.o:1D-TDHF.f90
-	$(FC) -c 1D-TDHF.f90 $(LN)
+mATTOHF.o:mATTOHF.f90
+	$(FC) -c mATTOHF.f90 $(LN)
 #
 #Targets
 #-----------------------------------------------------
 clean:
-	rm  1D-TDHF -f *~  *.o  *.mod
+	rm  mATTOHF -f *~  *.o  *.mod
